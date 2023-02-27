@@ -4,7 +4,7 @@
     "typescript": {},
     "markdown": {},
     "includes": [
-        "**/*.{ts,tsx,json,md}"
+        "**/*.{ts,json,md}"
     ],
     "excludes": [
         "**/node_modules",
