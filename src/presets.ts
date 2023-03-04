@@ -17,7 +17,7 @@ const presets = {
         var: "Vue",
         path: "dist/vue.global.prod.js",
     },
-    vue2: {
+    "vue@2": {
         var: "Vue",
         name: "vue",
         path: "dist/vue.runtime.min.js",
@@ -30,7 +30,7 @@ const presets = {
 
 export type PresetName = keyof typeof presets;
 
-export type RestOption = Omit<ScriptConfig, "var" | "name" | "path">;
+export type RestOption = Omit<ScriptConfig, "var" | "path">;
 
 export function libPreset(name: PresetName, option?: RestOption): ScriptConfig {
     const config = presets[name];
