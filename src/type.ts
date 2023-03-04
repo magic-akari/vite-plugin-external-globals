@@ -14,8 +14,18 @@ interface CDNConfig {
 }
 
 export interface ScriptConfig extends ScriptAttrs, CDNConfig {
+    /**
+     * global identifier name
+     */
     var: string;
+    /**
+     * name of `import foo from "name"`;
+     */
     name: string;
+    /**
+     * package name in node_modules
+     */
+    pkgName?: string;
     version?: string;
     path?: string;
 }
