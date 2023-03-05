@@ -7,40 +7,50 @@ import { sri } from "./sri.js";
 import { Options, ScriptConfig } from "./type.js";
 
 export function transformIndexHtml(options: Options, html: string): IndexHtmlTransformResult {
+    const entry = new Map<string, ScriptConfig>(options.entry.map(s => [s.pkgName || s.name, s]));
+
+    const tags = [];
+    const iconvert = convert(options, jsdelivr);
+
+    for (const [pkgName, script] of entry) {
+        tags.push(iconvert(pkgName, script));
+    }
+
     return {
         html,
-        tags: options.entry.map((m) => convert(options, m, jsdelivr)),
+        tags,
     };
 }
 
-function convert(options: Options, script: ScriptConfig, cdn: CDN): HtmlTagDescriptor {
-    const pkgName = script.pkgName || script.name;
-    const version = script.version || resolveVersion(pkgName);
-    let path = script.path || resolveEntry(pkgName);
-    if (path.startsWith("./")) {
-        path = path.slice(2);
-    }
+function convert(options: Options, cdn: CDN) {
+    return (pkgName: string, script: ScriptConfig): HtmlTagDescriptor => {
+        const version = script.version || resolveVersion(pkgName);
+        let path = script.path || resolveEntry(pkgName);
+        if (path.startsWith("./")) {
+            path = path.slice(2);
+        }
 
-    const builder = script.cdn || options.cdn || cdn;
-    const src = builder(pkgName, version, path);
+        const builder = script.cdn || options.cdn || cdn;
+        const src = builder(pkgName, version, path);
 
-    let integrity: string | boolean | undefined = script.integrity || options.integrity;
-    if (integrity) {
-        const local_path = pkgPath(pkgName, path);
-        integrity = sri(local_path, integrity);
-    } else {
-        integrity = false;
-    }
+        let integrity: string | boolean | undefined = script.integrity || options.integrity;
+        if (integrity) {
+            const local_path = pkgPath(pkgName, path);
+            integrity = sri(local_path, integrity);
+        } else {
+            integrity = false;
+        }
 
-    const injectTo = script.injectTo || options.injectTo;
-    const crossorigin = script.crossorigin || options.crossorigin || false;
-    const async = script.async || options.async || false;
-    const defer = script.defer || options.defer || false;
+        const injectTo = script.injectTo || options.injectTo;
+        const crossorigin = script.crossorigin || options.crossorigin || false;
+        const async = script.async || options.async || false;
+        const defer = script.defer || options.defer || false;
 
-    return {
-        tag: "script",
-        attrs: { src, integrity, crossorigin, async, defer },
-        injectTo,
+        return {
+            tag: "script",
+            attrs: { src, integrity, crossorigin, async, defer },
+            injectTo,
+        };
     };
 }
 
