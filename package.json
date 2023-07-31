@@ -8,7 +8,7 @@
         "lib"
     ],
     "type": "module",
-    "packageManager": "pnpm@7.27.1",
+    "packageManager": "pnpm@7.33.5",
     "dependencies": {
         "rollup-plugin-external-globals": "^0.7.1"
     },
