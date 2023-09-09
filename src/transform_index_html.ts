@@ -48,7 +48,7 @@ function convert(options: Options, cdn: CDN) {
 
         return {
             tag: "script",
-            attrs: { src, integrity, crossorigin, async, defer },
+            attrs: { src, integrity, crossorigin, async, defer, ...script.extraAttrs },
             injectTo,
         };
     };

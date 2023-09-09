@@ -8,6 +8,7 @@ interface ScriptAttrs {
     defer?: boolean;
     async?: boolean;
     injectTo?: HtmlTagDescriptor["injectTo"];
+    extraAttrs?: Record<string, string>;
 }
 
 interface CDNConfig {
