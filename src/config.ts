@@ -18,6 +18,7 @@ export function config(
     plugins.push(
         externalGlobals(
             Object.fromEntries(options.entry.map((m) => [m.name, m.var])),
+            { include: options.include, exclude: options.exclude },
         ),
     );
 

@@ -1,3 +1,4 @@
+import { ExternalGlobalsOptions } from "rollup-plugin-external-globals";
 import type { HtmlTagDescriptor } from "vite";
 import type { CDN } from "./cdn.js";
 
@@ -33,4 +34,12 @@ export interface ScriptConfig extends ScriptAttrs, CDNConfig {
 export interface Options extends ScriptAttrs, CDNConfig {
     apply?: "build" | "serve" | (() => boolean);
     entry: ScriptConfig[];
+    /**
+     * [include] is an array of glob patterns. If defined, only matched files would be transformed.
+     */
+    include?: ExternalGlobalsOptions["include"];
+    /**
+     * [exclude] is an array of glob patterns. Matched files would not be transformed.
+     */
+    exclude?: ExternalGlobalsOptions["exclude"];
 }
