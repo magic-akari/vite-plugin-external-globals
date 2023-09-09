@@ -10,7 +10,7 @@ export * from "./type.js";
 export function plugin(options: Options): Plugin {
     return {
         name: "vite-plugin:external-globals",
-        apply: "build",
+        apply: options.apply,
         enforce: "post",
         config(userConfig, configEnv) {
             return config(options, userConfig, configEnv);

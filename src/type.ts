@@ -31,5 +31,6 @@ export interface ScriptConfig extends ScriptAttrs, CDNConfig {
 }
 
 export interface Options extends ScriptAttrs, CDNConfig {
+    apply?: "build" | "serve" | (() => boolean);
     entry: ScriptConfig[];
 }
