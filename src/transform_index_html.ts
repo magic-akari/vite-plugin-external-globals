@@ -6,7 +6,7 @@ import { CDN, jsdelivr } from "./cdn.js";
 import { sri } from "./sri.js";
 import { Options, ScriptConfig } from "./type.js";
 
-export function transformIndexHtml(options: Options, html: string): IndexHtmlTransformResult {
+export function transformIndexHtml(options: Options): IndexHtmlTransformResult {
     const entry = new Map<string, ScriptConfig>(options.entry.map(s => [s.pkgName || s.name, s]));
 
     const tags = [];
@@ -16,10 +16,7 @@ export function transformIndexHtml(options: Options, html: string): IndexHtmlTra
         tags.push(iconvert(pkgName, script));
     }
 
-    return {
-        html,
-        tags,
-    };
+    return tags;
 }
 
 function convert(options: Options, cdn: CDN) {

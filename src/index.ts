@@ -15,8 +15,8 @@ export function plugin(options: Options): Plugin {
         config(userConfig, configEnv) {
             return config(options, userConfig, configEnv);
         },
-        transformIndexHtml(html) {
-            return transformIndexHtml(options, html);
+        transformIndexHtml() {
+            return transformIndexHtml(options);
         },
     };
 }
