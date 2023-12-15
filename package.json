@@ -14,7 +14,7 @@
     },
     "devDependencies": {
         "@types/node": "^20.9.1",
-        "dprint": "^0.42.5",
+        "dprint": "^0.43.0",
         "typescript": "^5.2.2",
         "vite": "^5.0.0"
     },
