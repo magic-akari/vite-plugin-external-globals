@@ -20,7 +20,7 @@ importers:
         version: 0.43.0
       typescript:
         specifier: ^5.2.2
-        version: 5.2.2
+        version: 5.4.5
       vite:
         specifier: ^5.0.0
         version: 5.0.5(@types/node@20.9.1)
@@ -329,8 +329,8 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
 
-  typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -461,6 +461,7 @@ snapshots:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
       rollup: 4.4.1
 
   '@rollup/rollup-android-arm-eabi@4.4.1':
@@ -595,15 +596,15 @@ snapshots:
 
   source-map-js@1.0.2: {}
 
-  typescript@5.2.2: {}
+  typescript@5.4.5: {}
 
   undici-types@5.26.5: {}
 
   vite@5.0.5(@types/node@20.9.1):
     dependencies:
-      '@types/node': 20.9.1
       esbuild: 0.19.5
       postcss: 8.4.32
       rollup: 4.4.1
     optionalDependencies:
+      '@types/node': 20.9.1
       fsevents: 2.3.3
