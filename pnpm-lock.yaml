@@ -16,8 +16,8 @@ importers:
         specifier: ^20.9.1
         version: 20.9.1
       dprint:
-        specifier: ^0.43.0
-        version: 0.43.0
+        specifier: ^0.47.0
+        version: 0.47.0
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -27,38 +27,38 @@ importers:
 
 packages:
 
-  '@dprint/darwin-arm64@0.43.0':
-    resolution: {integrity: sha512-0lf4+ihokesOlYmFCyLdB44QYA0+IfHK8pD53i2FJ3i8XJ5yZypokO2zq+lM9MI6lt8foxh5j8at7ChIaGX6HA==}
+  '@dprint/darwin-arm64@0.47.0':
+    resolution: {integrity: sha512-UoQA2kBSSooLx+DPUeml8xr75D7wwpNmH1xmDeX9c0JzFA5j7ZtykT/gNqGSRk9TRHH12nV3/e8VSamUbnbRfA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@dprint/darwin-x64@0.43.0':
-    resolution: {integrity: sha512-mMVobMZ3QUGSYgyICQSERk6Bdq2EfNL9kYTFqiK+0EBq4WF8XFE/+Itr1Os+QODhtDcn76j2hk3WkvBGruYvog==}
+  '@dprint/darwin-x64@0.47.0':
+    resolution: {integrity: sha512-gL2qYooB1mSatS0CQ6/UrplyUewnWD3cg1U7S+CZAVpgSkJgOX3haWinoD66kaBdWAPJo4NjeMnlIS7WVXmbXg==}
     cpu: [x64]
     os: [darwin]
 
-  '@dprint/linux-arm64-glibc@0.43.0':
-    resolution: {integrity: sha512-yyRCS1UYylKfRWXdH7XDfRy0xzub2rLhvC/TwCQS1o7Qo95XXxFhlDrTLsGI+vMS5m2abJtBN3Zv+tvNctGWTQ==}
+  '@dprint/linux-arm64-glibc@0.47.0':
+    resolution: {integrity: sha512-VrY41zk75f07tfD9bIiYpRom7j4jc/5a8ifWhebnA7jwitTIInkPBUAwJwygGQA/bY7uKYuoykEnipjOzXE48A==}
     cpu: [arm64]
     os: [linux]
 
-  '@dprint/linux-arm64-musl@0.43.0':
-    resolution: {integrity: sha512-tDG3h+/IOUC7VXrjF0dNAhstDn+hwuLmQ9Pdp6fOIt9n7nD71VK1M4f8+yi3BdhxYuIKj3+VYPbS9FodWgB6Uw==}
+  '@dprint/linux-arm64-musl@0.47.0':
+    resolution: {integrity: sha512-UlrOe1cD/bZmoGVdxo7wpIn6DI70SdPeeQe5LFex8csKERM1H0GmrwDTpHlvN2OzZ4W8d6j7dVQEw5K3defxSg==}
     cpu: [arm64]
     os: [linux]
 
-  '@dprint/linux-x64-glibc@0.43.0':
-    resolution: {integrity: sha512-pwHW+/CLcGCzBAL0efmrC/KAgOBIkT+Xc2kOo3e/buEJe32CCTuv74jdsLy8WWrAcOJz0S3dLzdPDEQxuzDOnA==}
+  '@dprint/linux-x64-glibc@0.47.0':
+    resolution: {integrity: sha512-06j1qJtipRIds7I9f+gYAK5hNEjX3BoIT08axb9eo1VTUOUQjnJ4NwOBsT8rw8mqtTuePtWIWzZMsELom8UXZA==}
     cpu: [x64]
     os: [linux]
 
-  '@dprint/linux-x64-musl@0.43.0':
-    resolution: {integrity: sha512-jNOKk0h0oQLzXBkIep03SsgadZ2bnUcI0O0c7IGCPt1S+w66iMDhz78KiGk6FK70Vxb+bNRYeJiL03pbx55PhA==}
+  '@dprint/linux-x64-musl@0.47.0':
+    resolution: {integrity: sha512-yjT5Tua7E0aIaUvuyslfYf2h2NB6lipRFOMKySX5MHSjKHjJKdXiIddaTx9EHg6NHzyrYYH6/jD2ZqllgKjY/g==}
     cpu: [x64]
     os: [linux]
 
-  '@dprint/win32-x64@0.43.0':
-    resolution: {integrity: sha512-4KtAyDtSTtJZc3VNO0G5pceAJJxvOPSVHJ1LpTdUqcfMGi1pORaCpEFs0TLhz15d8i7HmYbbtwT+hhiuTDRCXw==}
+  '@dprint/win32-x64@0.47.0':
+    resolution: {integrity: sha512-gfqV74GdQF7DWH5ClpottRS5qrEb14KncMR/bkL5ek40JqZZAeRFfYpWnuppE2rm5j9iQ+vs3Yx/YsW2u13q6Q==}
     cpu: [x64]
     os: [win32]
 
@@ -272,8 +272,8 @@ packages:
   '@types/node@20.9.1':
     resolution: {integrity: sha512-HhmzZh5LSJNS5O8jQKpJ/3ZcrrlG6L70hpGqMIAoM9YVD0YBRNWYsfwcXq8VnSjlNpCpgLzMXdiPo+dxcvSmiA==}
 
-  dprint@0.43.0:
-    resolution: {integrity: sha512-+dhMk7HE2B6Us4HkxWrJTcVvaOXd+YvSD+AwRXz7fCVrM1lgxqLPR+xt+ZqNjt2tDmCvU/i00L6yIoPbTqr+yA==}
+  dprint@0.47.0:
+    resolution: {integrity: sha512-rcfbkLkxVusprh4DNvv8fzpnwZmAk3ttHzu6gOeZyeq8AtH86Py4sPcJ1XZKs/iD29QOUAbObR2VQm49NFAAxw==}
     hasBin: true
 
   esbuild@0.19.5:
@@ -367,25 +367,25 @@ packages:
 
 snapshots:
 
-  '@dprint/darwin-arm64@0.43.0':
+  '@dprint/darwin-arm64@0.47.0':
     optional: true
 
-  '@dprint/darwin-x64@0.43.0':
+  '@dprint/darwin-x64@0.47.0':
     optional: true
 
-  '@dprint/linux-arm64-glibc@0.43.0':
+  '@dprint/linux-arm64-glibc@0.47.0':
     optional: true
 
-  '@dprint/linux-arm64-musl@0.43.0':
+  '@dprint/linux-arm64-musl@0.47.0':
     optional: true
 
-  '@dprint/linux-x64-glibc@0.43.0':
+  '@dprint/linux-x64-glibc@0.47.0':
     optional: true
 
-  '@dprint/linux-x64-musl@0.43.0':
+  '@dprint/linux-x64-musl@0.47.0':
     optional: true
 
-  '@dprint/win32-x64@0.43.0':
+  '@dprint/win32-x64@0.47.0':
     optional: true
 
   '@esbuild/android-arm64@0.19.5':
@@ -461,6 +461,7 @@ snapshots:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
       rollup: 4.4.1
 
   '@rollup/rollup-android-arm-eabi@4.4.1':
@@ -505,15 +506,15 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  dprint@0.43.0:
+  dprint@0.47.0:
     optionalDependencies:
-      '@dprint/darwin-arm64': 0.43.0
-      '@dprint/darwin-x64': 0.43.0
-      '@dprint/linux-arm64-glibc': 0.43.0
-      '@dprint/linux-arm64-musl': 0.43.0
-      '@dprint/linux-x64-glibc': 0.43.0
-      '@dprint/linux-x64-musl': 0.43.0
-      '@dprint/win32-x64': 0.43.0
+      '@dprint/darwin-arm64': 0.47.0
+      '@dprint/darwin-x64': 0.47.0
+      '@dprint/linux-arm64-glibc': 0.47.0
+      '@dprint/linux-arm64-musl': 0.47.0
+      '@dprint/linux-x64-glibc': 0.47.0
+      '@dprint/linux-x64-musl': 0.47.0
+      '@dprint/win32-x64': 0.47.0
 
   esbuild@0.19.5:
     optionalDependencies:
@@ -601,9 +602,9 @@ snapshots:
 
   vite@5.0.5(@types/node@20.9.1):
     dependencies:
-      '@types/node': 20.9.1
       esbuild: 0.19.5
       postcss: 8.4.32
       rollup: 4.4.1
     optionalDependencies:
+      '@types/node': 20.9.1
       fsevents: 2.3.3
