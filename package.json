@@ -10,7 +10,7 @@
     "type": "module",
     "packageManager": "pnpm@9.1.4",
     "dependencies": {
-        "rollup-plugin-external-globals": "^0.9.0"
+        "rollup-plugin-external-globals": "^0.12.0"
     },
     "devDependencies": {
         "@types/node": "^20.9.1",
